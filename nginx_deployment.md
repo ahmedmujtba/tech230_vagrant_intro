@@ -29,7 +29,7 @@ In the new VM terminal, run 'sudo apt-get install nginx -y' (to install nginx)
 In the new VM terminal, run 'sudo systemctl start nginx' (to start nginx)
 In the new VM terminal, run 'sudo systemctl status nginx' (to check nginx has in fact started)
 
-### access the nginx web server in web browser
+### Access the nginx web server in web browser
 
 nginx web server can be accessed by entering following IP address in the web browser:
 192.168.0.10
