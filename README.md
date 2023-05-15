@@ -2,82 +2,89 @@
 
 In this repo, you will learn how to setup a Virtual Machine using Vagrant & Virtual Box and how to deploy an nginx web server.
 
-
-## Linux/GitBash Command Cheat Sheet
+## Linux/Bash Command Cheat Sheet
 
 This is a Linux / Git Bash Command Cheat Sheet containing all the possible commands you may need whilst running a virtual machine.
 
+`cd <directoryname>` - To change directory
 
-### To change directory
-cd directory-name
+`cd /` - To go to root directory
 
-### To go to root directory
-cd /
+`cd ..` - To go up one folder
 
-### To go up one folder
-cd ..
+`pwd` - To print working directory
 
-### To print working directory
-pwd
+`sudo <commandname>` - To run a command in super user mode (admin mode)
 
-### To run a command in super user mode (admin mode)
-sudo examplecommandname
+`sudo nano example.txt` - To write to a file within terminal
 
-### To write to a file within terminal
-sudo nano example.txt
+`sudo nano example.jpeg` - To create a file if doesn't exit already
 
-### To create a file if doesn't exit already
-sudo nano example.jpeg
+`touch example.txt` - To create a new file
 
-### To create a new file
-touch example.txt
+`rm example.txt` - To delete an existing file
 
-### To delete an existing file
-rm example.txt
+`cat example.txt` - To view contents of a file
 
-### To  view contents of a file
-cat example.txt
+`cp example.txt new-example.txt` - To copy and rename a file
 
-### To copy and rename a file
-cp example.txt new-example.txt
+`cp example.txt directoryname` - To copy a file to a different directory
 
-### To copy a file to a different directory
-cp example.txt directoryname
+`mkdir directoryname` - To create a directory
 
-### To create a new directory
-mkdir directoryname
+`mkdir .hidden-directory-name` - To create a hidden directory
 
-### To create a hidden directory
-mkdir .hidden-directory-name
+`rm -rf directoryname` - To remove a directory
 
-### To remove a directory
-rm -rf directoryname
+`mv old-filename new-filename` - To rename a file
 
-### To rename a file
-mv old-filename new-filename
+`ls` - To view a list of files/directories in current working directory
 
-### To view a list of files/directories in current working directory
-ls
+`ls -a` - To view all files (including hidden files)
 
-### To view all files (including hidden files)
-ls -a
+`ls \*.txt` - To view files of a specific type (text file in this example)
 
-### To view files of a specific type
-ls *.txt (shows all text files)
+`ls -l` (shows permissions, number of links, owner name, owner group, file size, time last modified) - To view a list of files/directories in long list format
 
-### To view a list of files/directories in long list format
-ls -l (shows permissions, number of links, owner name, owner group, file size, time last modified)
+`chmod u+x filename` - (grants permission for current user to execute filename)
+`chmod g+w filename` - (grants permission for everyone within current group to modify filename)
 
-### To modify user access
-chmod u+x filename (grants permission for current user to execute filename)
-chmod g+w filename (grants permission for everyone within current group to modify filename)
+`u` = user
+`g` = group
+`o` = other
 
-u = user
-g = group
-o = other
+`d` = directory (if element is a directory)
+`l` = link (if element is a file links)
+`r` = read (read permissions)
+`w` = write (write permissions)
+`x` = execute (for scripts and programs)
 
-d= directory (if element is a directory)
-l = link (if element is a file links)
-r= read (read permissions)
-w = write (write permissions)
-x = execute (for scripts and programs)
+`head -2 example.txt` - This command shows two lines from the top of a specified file. `head` represents the top
+
+`tail -2 example.txt` - This command shows two lines from the bottom of a specific file. `tail` represents the bottom
+
+`sort example.txt` - To sort file contents
+
+`cat example.txt` - To view contents of a file
+
+`al example.txt`
+
+`wc example.txt`
+
+`wc -l example.txt`
+
+`ls | head -1` - To combine two commands, `|` is referred to as pipe. This example returns one file from the top
+
+`cat example.txt | grep hello` - To run all lines with the word `hello`
+
+`top` - Shows what programmes are running
+
+`q` - To quit terminal
+
+`ps` - Shows programmes running
+
+`ps aux` - Detailed overview of what's running. Doesn't lock you in terminal unlike `ps`
+
+`kill <programme>` - Terminates a specific programme e.g. `Kill 2165` will terminate programme 2165
+
+`kill -9 <programme>` - Terminates a programme forcefully
